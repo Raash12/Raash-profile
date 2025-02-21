@@ -362,3 +362,21 @@ body {
 .fade-in {
   animation: fadeIn 0.5s ease-out forwards;
 }
+.mobile-menu-toggle {
+  display: none; /* Hidden by default */
+}
+
+@media (max-width: 768px) {
+  .mobile-menu-toggle {
+    display: block;
+  }
+
+  .nav-links {
+    display: none; /* Hide by default */
+  }
+
+  .nav-links.active {
+    display: flex; /* Show when active */
+    flex-direction: column;
+  }
+}
